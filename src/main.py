@@ -24,7 +24,7 @@ options.add_argument('--allow-profiles-outside-user-dir')
 options.add_argument('--enable-profile-shortcut-manager')
 options.add_argument(r'user-data-dir=.\User')
 options.add_argument('--profile-directory=Profile 1')
-options.headless = True
+#options.headless = True
 
 browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -32,6 +32,8 @@ browser.maximize_window()
 
 try:
     browser.get('https://web.whatsapp.com/catalog/393427688947')
+    print('start')
+    print(browser)
     for i in range(1, 100):
         try:
             item_xpath = f'//*[@id="app"]/div/div/div[6]/span/div/span/div/div[2]/div[2]/div/div/div/div[{i}]/div/div/div[2]/div[1]/div/span'

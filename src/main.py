@@ -24,7 +24,7 @@ options.add_argument('--allow-profiles-outside-user-dir')
 options.add_argument('--enable-profile-shortcut-manager')
 options.add_argument(r'user-data-dir=.\User')
 options.add_argument('--profile-directory=Profile 1')
-#options.headless = True
+options.headless = True
 
 browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 

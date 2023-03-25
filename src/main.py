@@ -8,7 +8,6 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import sys
-from config import CHROME_PROFILE_PATH
 
 try:
     if sys.argv[1]:
